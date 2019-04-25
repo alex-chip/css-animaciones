@@ -1,0 +1,21 @@
+form {
+  margin: 2em;
+}
+input {
+  border: 1px solid #ccc;
+  transition: background .5s;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+  background: yellow;
+}
+
+input:focus:valid {
+  background: lime;
+}
+
+input:focus:invalid {
+  background: red;
+}

@@ -1,0 +1,42 @@
+.menu,
+[class^="menu"] {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu--child {
+  position: absolute;
+  transform: scale(1,0);
+  transform-origin: top center;
+  transition: transform .3s;
+}
+
+[class^="menu__item"] {
+  background: #333;
+}
+
+[class^="menu__item"]:hover {
+  background: #111;
+}
+
+/* [class^="menu__item"]:hover .menu--child {
+  display: block;
+} */
+
+[class^="menu__item"]:hover .menu--child {
+  transform: scale(1);
+}
+
+[class^="menu__link"] {
+  display: block;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  color: #DDD;
+  white-space: nowrap;
+}

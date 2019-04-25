@@ -1,0 +1,57 @@
+p {
+  background: yellow;
+  padding: 1em;
+  transition: all .5s;
+}
+
+.animate p.primero {
+  text-align: right;
+}
+
+.animate p {
+  background: initial;
+}
+
+span {
+  display: inline-block;
+  padding: inherit;
+  position: relative;
+  left: 0;
+  transition: all .5s;
+}
+
+.animate span {
+  left: 92%;
+}
+
+strong {
+  display: inline-block;
+  transition: all .5s;
+}
+
+.animate strong {
+  transform: translateX(calc(100vw - 100% - 2em));
+}
+
+.flex {
+  display: flex;
+  background: lime;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.item {
+  color: red;
+  padding: 2em 4em;
+  border: 1px solid currentColor;
+  transition: all .5s;
+}
+
+.item:first-child {
+  background: #fff;
+  order: 0;
+}
+
+.animate .item:first-child {
+  order: 5; /* se anima como entero */
+}

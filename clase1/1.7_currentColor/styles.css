@@ -1,0 +1,39 @@
+body {
+  color: red;
+}
+
+article {
+  animation: color 5s infinite alternate;
+}
+
+a {
+  color: currentColor;
+  border: 1px solid currentColor;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: currentColor;
+}
+
+@keyframes color {
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: green;
+  }
+
+  75% {
+    color: cyan;
+  }
+
+  100% {
+    color: magenta;
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  font-size: 3.5em;
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+a {
+  padding: .3em 1em;
+  margin: auto;
+  color: #fff;
+  background-color: red;
+  text-decoration: none;
+  border-radius: .2em;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  transition: background-color .5s .3s,
+    color .5s .3s,
+    transform .3s,
+    left .5s .4s;
+}
+
+p {
+  margin: auto;
+}
+
+p:hover a {
+  background-color: black;
+  color: yellow;
+  transform: translateY(-10%);
+  left: -500%;
+}
